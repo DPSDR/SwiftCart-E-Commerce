@@ -3,8 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Best Collection For You</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="navbar bg-base-100 shadow-sm max-w-7xl mx-auto px-10">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-2xl font-bold text-blue-600"
+            >SwiftCart</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn"><i class="fa-solid fa-cart-shopping"></i></a>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative h-[450px] w-full bg-cover bg-center"
+      style="background-image: url(&quot;./Assets/banner-image.png&quot;)"
+    >
+      <!-- overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <!-- content -->
+      <div
+        class="relative z-10 max-w-7xl mx-auto h-full flex items-center px-10"
+      >
+        <div class="text-white max-w-lg">
+          <h1 class="text-4xl font-bold leading-tight">
+            Best Collection For You
+          </h1>
+
+          <p class="mt-4 text-sm text-gray-200">
+            Discover the latest trends in fashion, electronics, and more. Shop
+            with confidence and style at SwiftCart.
+          </p>
+
+          <button
+            class="mt-6 btn bg-blue-600 text-white border-none hover:bg-blue-700"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#F9FAFB]">
+      <section class="space-y-5 py-10">
+        <h2 class="text-3xl font-bold text-center">Why Choose Us</h2>
+        <p class="text-sm text-center text-gray-500">
+          We provide the best shopping experience with top-notch services.
+        </p>
+      </section>
+
+      <section
+        class="p-10 w-11/12 mx-auto mb-10 grid grid-cols-1 md:grid-cols-4 gap-5"
+      >
+        <div class="card bg-base-100 card-sm shadow-sm relative">
+          <span class="text-blue-600 ml-5 absolute -mt-5"
+            ><button
+              class="btn btn-outline btn-primary bg-gray-100 border rounded-lg shadow-lg"
+            >
+              <i class="fa-regular fa-truck"></i></button
+          ></span>
+          <div class="card-body mt-5">
+            <h2 class="card-title">Fast Delievery</h2>
+            <p>
+              Get you orders delivered to your doorstep quickly and efficiently
+            </p>
+          </div>
+        </div>
+        <div class="card bg-base-100 card-sm shadow-sm">
+          <span class="text-blue-600 ml-5 absolute -mt-5"
+            ><button
+              class="btn btn-outline btn-primary bg-gray-100 border rounded-lg shadow-lg"
+            >
+              <i class="fa-solid fa-headphones"></i></button
+          ></span>
+          <div class="card-body mt-5">
+            <h2 class="card-title">24/7 Support</h2>
+            <p>Our support team is available around the clock to assist you</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 card-sm shadow-sm">
+          <span class="text-blue-600 ml-5 absolute -mt-5"
+            ><button
+              class="btn btn-outline btn-primary bg-gray-100 border rounded-lg shadow-lg"
+            >
+              <i class="fa-solid fa-shield"></i></button
+          ></span>
+          <div class="card-body mt-5">
+            <h2 class="card-title">Secure Payment</h2>
+            <p>
+              Experiance sage and secure transactions with kour encrypted
+              payment system
+            </p>
+          </div>
+        </div>
+        <div class="card bg-base-100 card-sm shadow-sm">
+          <span class="text-blue-600 ml-5 absolute -mt-5"
+            ><button
+              class="btn btn-outline btn-primary bg-gray-100 border rounded-lg shadow-lg"
+            >
+              <i class="fa-solid fa-rotate"></i></button
+          ></span>
+          <div class="card-body mt-5">
+            <h2 class="card-title">Easy Returns</h2>
+            <p>Not satisfied? Return your products easily withing 30 days.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-bold text-center">Why Choose Us</h2>
+    </section>
+  </body>
 </html>
