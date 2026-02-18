@@ -30,11 +30,11 @@
     <header>
       <div class="navbar bg-base-100 shadow-sm max-w-7xl mx-auto px-10">
         <div class="navbar-start">
-          <a class="btn btn-ghost text-2xl font-bold text-blue-600"
+          <a href="./index.html" class="btn btn-ghost text-2xl font-bold text-blue-600"
             >SwiftCart</a
           >
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center hidden md:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./products.html">Products</a></li>
@@ -65,10 +65,10 @@
               tabindex="-1"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li><a href="">Home</a></li>
-              <li><a href="">Products</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -92,7 +92,7 @@
     <!-- All Products -->
     <section
       id="product-container"
-      class="p-10 w-11/12 mx-auto my-10 grid grid-cols-4 gap-5"
+      class="p-10 w-11/12 mx-auto my-10 grid grid-cols-1 md:grid-cols-4 gap-5"
     >
       <div
         class="text-center bg-sky-100 rounded-xl col-span-full py-10 space-y-6 font-bangla"
@@ -133,8 +133,10 @@
         <div>
           <h3 class="text-white font-semibold mb-2">Quick Links</h3>
           <ul class="space-y-1 text-gray-400 text-sm">
-            <li><a href="#" class="hover:text-white">Home</a></li>
-            <li><a href="#" class="hover:text-white">Products</a></li>
+            <li><a href="./index.html" class="hover:text-white">Home</a></li>
+            <li>
+              <a href="./products.html" class="hover:text-white">Products</a>
+            </li>
             <li><a href="#" class="hover:text-white">About</a></li>
             <li><a href="#" class="hover:text-white">Contact</a></li>
           </ul>
