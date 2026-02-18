@@ -26,6 +26,7 @@
     <title>Best Collection For You</title>
   </head>
   <body>
+    <!-- Header Section -->
     <header>
       <div class="navbar bg-base-100 shadow-sm max-w-7xl mx-auto px-10">
         <div class="navbar-start">
@@ -35,10 +36,10 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -118,7 +119,7 @@
         <div class="card bg-base-100 card-sm shadow-sm relative">
           <span class="text-blue-600 ml-5 absolute -mt-5"
             ><button
-              class="btn btn-outline btn-primary bg-gray-100 border rounded-lg shadow-lg"
+              class="btn btn-outline btn-primary border rounded-lg shadow-lg"
             >
               <i class="fa-regular fa-truck"></i></button
           ></span>
@@ -132,7 +133,7 @@
         <div class="card bg-base-100 card-sm shadow-sm">
           <span class="text-blue-600 ml-5 absolute -mt-5"
             ><button
-              class="btn btn-outline btn-primary bg-gray-100 border rounded-lg shadow-lg"
+              class="btn btn-outline btn-primary border rounded-lg shadow-lg"
             >
               <i class="fa-solid fa-headphones"></i></button
           ></span>
@@ -144,7 +145,7 @@
         <div class="card bg-base-100 card-sm shadow-sm">
           <span class="text-blue-600 ml-5 absolute -mt-5"
             ><button
-              class="btn btn-outline btn-primary bg-gray-100 border rounded-lg shadow-lg"
+              class="btn btn-outline btn-primary border rounded-lg shadow-lg"
             >
               <i class="fa-solid fa-shield"></i></button
           ></span>
@@ -159,7 +160,7 @@
         <div class="card bg-base-100 card-sm shadow-sm">
           <span class="text-blue-600 ml-5 absolute -mt-5"
             ><button
-              class="btn btn-outline btn-primary bg-gray-100 border rounded-lg shadow-lg"
+              class="btn btn-outline btn-primary border rounded-lg shadow-lg"
             >
               <i class="fa-solid fa-rotate"></i></button
           ></span>
@@ -171,8 +172,95 @@
       </section>
     </section>
 
-    <section>
-      <h2 class="text-3xl font-bold text-center">Why Choose Us</h2>
+    <!-- Trending Product -->
+    <section class="w-8/12 mx-auto">
+      <h2 class="text-3xl font-bold text-left">Trending Now</h2>
+      <div id="trending-product-container" class="md:flex gap-5 my-10"></div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Logo & Description -->
+        <div>
+          <h2 class="text-white font-bold text-lg mb-2">SwiftCart</h2>
+          <p class="text-gray-400 text-sm">
+            Your one-stop shop for all your fashion and lifestyle needs. Quality
+            products, fast delivery, and excellent support.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-white font-semibold mb-2">Quick Links</h3>
+          <ul class="space-y-1 text-gray-400 text-sm">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li><a href="#" class="hover:text-white">Products</a></li>
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li><a href="#" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="text-white font-semibold mb-2">Support</h3>
+          <ul class="space-y-1 text-gray-400 text-sm">
+            <li><a href="#" class="hover:text-white">FAQ</a></li>
+            <li><a href="#" class="hover:text-white">Shipping</a></li>
+            <li><a href="#" class="hover:text-white">Returns</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h3 class="text-white font-semibold mb-2">
+            Subscribe to our Newsletter
+          </h3>
+          <p class="text-gray-400 text-sm mb-2">
+            The latest news, articles, and resources, sent to your inbox weekly.
+          </p>
+          <form class="flex flex-col sm:flex-row gap-2">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="rounded-md text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+            />
+            <button
+              type="submit"
+              class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom section -->
+      <div
+        class="mt-10 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6 text-gray-500 text-sm"
+      >
+        <p>© 2025 SwiftCart, Inc. All rights reserved.</p>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" class="hover:text-white"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="hover:text-white"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="hover:text-white"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-white"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#" class="hover:text-white"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
